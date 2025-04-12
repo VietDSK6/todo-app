@@ -140,7 +140,7 @@ func main() {
 	headersOk := handlers.AllowedHeaders(
 		[]string{"X-Requested-With", "Content-Type", "Authorization"},
 	)
-	originsOk := handlers.AllowedOrigins([]string{"http://localhost:3000"})
+	originsOk := handlers.AllowedOrigins([]string{"*"})
 	methodsOk := handlers.AllowedMethods(
 		[]string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 	)
